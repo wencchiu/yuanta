@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+#cover-box {
+  background: #f3f2f1;
+  width: 100%;
+  height:770px;
+  position: relative;
+}
+
+#header-bg {
+  height: 75px;
+  width: 100%;
+  background: url(images/header-bg.png);
+}
+
+#header-icon {
+  height: 75px;
+  width: 424px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  background: url(images/header-logo.png);
+}
+
+#header-fb-icon {
+  height: 51px;
+  width: 51px;
+  position: absolute;
+  right: 80px;
+  top: 13px;
+  background: url(images/header-fb-icon.png);
+}
+
+#header-ms-icon {
+  height: 51px;
+  width: 51px;
+  position: absolute;
+  right: 140px;
+  top: 13px;
+  background: url(images/header-ms-icon.png);
+}
+
+#cover-image {
+  background: url(images/1-home.png);
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  width: 727px;
+  height: 362px;
+}
+
+#cover-text {
+  position: absolute;
+  top: 220px;
+  right: 40px;
+  width: 550px;
+
+}
+
+#cover-text-title {
+  font-size: 75px;
+  font-weight: 500;
+  color:#0f6687;
+  margin: 0 ;
+  text-align: center;
+}
+
+#cover-text-date {
+  font-size: 50px;
+  font-weight: 200;
+  color:#0f6687;
+  margin: 5px 0;
+  text-align: center;
+}
+
+#cover-text-date div {
+  width: 130px;
+  height: 25px;
+  border-bottom: 1px #0f6687 solid;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  bottom: 18px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+#cover-text-nonstop {
+  font-size: 44px;
+  font-weight: 400;
+  color: #ea535c;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#cover-text-nonstop span {
+  color: #eead43;
+}
+
+#cover-text-flag {
+  background: url(images/1-flag.png);
+  margin: 0 auto;
+  width: 207px;
+  height: 52px;
+}
+
+#cover-text-gift {
+  font-size: 28px;
+  font-weight: 400;
+  color: #0f6687;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#cover-text-gift span {
+  color: #ea535c;
+}
