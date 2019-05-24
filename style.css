@@ -82,7 +82,6 @@ header {
   top: 220px;
   right: 40px;
   width: 550px;
-
 }
 
 #cover-text-title {
@@ -110,7 +109,6 @@ header {
   font-weight: 400;
   position: relative;
   bottom: 18px;
-  overflow: hidden;
   display: inline-block;
   margin: 0 8px 0 0;
 }
@@ -148,14 +146,18 @@ header {
 
 #case-box {
   position: relative;
-  height: 700px;
+  height: 750px;
 }
 
 #case-detail-box {
   width: 1100px;
   height: 310px;
-  margin: 80px auto 20px;
+  margin: 130px auto 20px;
   position: relative;
+}
+
+#case-title {
+  top: -33px;
 }
 
 .section-title {
@@ -168,8 +170,6 @@ header {
   text-align: center;
   line-height: 66px;
   margin: auto;
-  position: relative;
-  top: -33px;
 }
 
 .case-type {
@@ -187,7 +187,6 @@ header {
 #no-exp-title {
   width: 220px;
   left: 190px;
-
 }
 
 #have-exp-title {
@@ -225,7 +224,6 @@ header {
   height: 28px;
   display: inline-block;
   margin: 3px;
-
 }
 
 #no-exp-content-bg {
@@ -266,4 +264,203 @@ header {
   height: 222px;
   margin: auto;
   position: relative;
+}
+
+
+#detail-box {
+  height: 770px;
+  background: #f3f2f1;
+}
+
+#detail-female-charge {
+  color: red;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 8px auto 25px;
+}
+
+.detail-phase-box {
+  width: 400px;
+  height: 700px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.detail-image-box {
+  height: 270px;
+  width: 400px;
+}
+
+#detail-freshman-box {
+  margin-left: 90px;
+  z-index: 99999;
+}
+
+#detail-working-box {
+  z-index: 9999;
+}
+
+#freshman-image {
+  background: url(images/detail-freshman.png);
+  width: 217px;
+  height: 201px;
+  top: 40px;
+  position: relative;
+  margin-left: 40px;
+}
+
+#working-image {
+  background: url(images/detail-job.png);
+  width: 170px;
+  height: 250px;
+  top: 20px;
+  position: relative;
+  margin: auto;
+}
+
+#married-image {
+  background: url(images/detail-marriage.png);
+  width: 145px;
+  height: 238px;
+  top: 25px;
+  position: relative;
+  margin: auto;
+}
+
+.phase-bg {
+  margin-top: 15px;
+  position: relative;
+}
+
+.phase-bg-rec {
+  background: #e3e2dd;
+  width: 360px;
+  height: 120px;
+  display: inline-block;
+}
+
+.phase-bg-tri {
+  width: 0;
+  height: 0;
+  border-width: 60px 0 60px 38px;
+  border-style: solid ;
+  border-color: transparent transparent transparent #e3e2dd;
+  display: inline-block;
+  margin-left: -6px;
+}
+
+.phase-title {
+  font-size: 26px;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  z-index: 9;
+  margin: 20px 0;
+  color: #5f5f5f;
+  width: 360px;
+}
+
+.phase-example {
+  font-size: 20px;
+  position: absolute;
+  top: 65px;
+  z-index: 9;
+  margin: 0;
+  color: #5f5f5f;
+  width: 360px;
+}
+
+#detail-working-box span {
+  color: #74b5d6;
+}
+
+#detail-married-box span {
+  color: #72c0bc;
+}
+
+#detail-married-box .phase-bg-tri {
+  border-color: transparent;
+}
+
+.insurance-bg {
+  width: 360px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+#freshman-insurance-bg {
+  height: 88px;
+  background: #4f9ac1;
+}
+
+#working-insurance-bg {
+  height: 120px;
+  background: #74b5d6;
+}
+
+#married-insurance-bg {
+  height: 140px;
+  background: #72c0bc;
+}
+
+.insurance-bg p {
+  color: #fff;
+  margin: 0;
+}
+
+.insurance-amount-title {
+  font-size: 20px;
+}
+
+.insurance-amount {
+  font-size: 34px;
+}
+
+.insurance-amount-box {
+  height: 76px;
+  width: 100px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.annual-amount {
+  font-size: 36px;
+  width: 360px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+#freshman-annual {
+  color: #4f9ac1;
+}
+
+#working-annual {
+  color: #74b5d6;
+}
+
+#married-annual {
+  color: #72c0bc;
+}
+
+.balloon-bg {
+  background: url(images/detail-plus-icon.png);
+  width: 108px;
+  height: 88px;
+  position: absolute;
+  right: -42px;
+  top: 418px;
+}
+
+.balloon-text {
+  color: #fff;
+  width: 70px;
+  font-size: 20px;
+  padding-left: 22px;
+  padding-top: 15px;
+  text-align: left;
 }
