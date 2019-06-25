@@ -2,128 +2,188 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
-
 </head>
-
 <body>
-  <div id="btn-calculate">立即試算</div>
+  <a href="https://ec.yuantalife.com.tw/ecp/product/00000103" id="btn-calculate">立即試算</a>
+  <a href="https://ec.yuantalife.com.tw/ecp/product/00000103" id="btn-calculate-mobile" class="mobile">立即試算</a>
+
+  <div id="icon-box-mobile" class="mobile">
+    <div id="ms-icon-mobile" class="icon-mobile">
+      <a href="http://m.me/yuantalifeinsurance"></a>
+    </div>
+    <div id="fb-icon-mobile" class="icon-mobile">
+      <a href="https://www.facebook.com/yuantalifeinsurance"></a>
+    </div>
+    <div id="top-icon-mobile" class="icon-mobile"></div>
+  </div>
 
   <div id="cover-box">
     <header>
       <div id="header-bg"></div>
       <div id="header-icon"></div>
-      <div id="header-fb-icon"></div>
-      <div id="header-ms-icon"></div>
+      <a href="https://www.facebook.com/yuantalifeinsurance" id="header-fb-icon"></a>
+      <a href="http://m.me/yuantalifeinsurance" id="header-ms-icon"></a>
     </header>
-    <div id="cover-image"></div>
-    <div id="cover-text">
-      <p id="cover-text-title">壽險保障Plus+</p>
-      <div id="cover-text-date"><div>2019</div>1/7-3/31<div></div></div>
-      <p id="cover-text-nonstop">大禮<span>送不停</span></p>
-      <div id="cover-text-flag"></div>
-      <p id="cover-text-gift">就抽<span>iPad Pro、Balmuda蒸氣烤麵包機</span></p>
-
+    <div id="cover-image-text-box">
+      <div id="cover-image" class="animation-image"></div>
+      <div id="cover-text">
+        <p id="cover-text-title"></p>
+        <div id="cover-text-date" class="animation-date"><div class="animation-date">2019</div>1/7-3/31<div class="animation-date"></div></div>
+        <p id="cover-text-nonstop" class="animation-nonstop-gift">大禮<span class="animation-nonstop-non">送不停</span></p>
+        <div id="cover-text-flag" class="animation-flag"></div>
+        <p id="cover-text-gift" class="animation-gift">就抽<span class="animation-gift-em">iPad Pro、Balmuda蒸氣烤麵包機</span></p>
+      </div>
+      <div id="cover-image-mobile"></div>
     </div>
   </div>
 
   <div id="case-box">
     <div class="section-title" id="case-title">案例分享</div>
     <div id="case-detail-box">
-      <div class="case-type" id="no-exp-title">還沒有壽險保障</div>
-      <div class="case-type" id="have-exp-title">已經有終身壽險保障</div>
-      <div class="case-content-bg" id="no-exp-content-bg">
+      <div class="case-type animation-ini" id="no-exp-title">還沒有壽險保障</div>
+      <div class="case-content-bg animation-ini" id="no-exp-content-bg">
         <div class="case-content" id="no-exp-content">
           <p></p><div>保費輕鬆繳</div>
           </br><p></p><div>續保免體檢</div>
           </br><p></p><div>保額可彈性調整</div>
         </div>
       </div>
-      <div class="case-content-bg" id="have-exp-content-bg">
+      <div class="case-type animation-ini" id="have-exp-title">已經有終身壽險保障</div>
+      <div class="case-content-bg animation-ini" id="have-exp-content-bg">
         <div class="case-content" id="have-exp-content">
           <p></p><div>花小錢補足壽險保額</div>
           </br><p></p><div>換工作提升保額也低負擔</div>
           </br><p></p><div>續保免體檢</div>
         </div>
       </div>
-      <div class="case-tree" id="no-exp-tree"></div>
-      <div class="case-tree" id="have-exp-tree"></div>
+      <div class="case-tree animation-ini" id="no-exp-tree"></div>
+      <div class="case-tree animation-ini" id="have-exp-tree"></div>
     </div>
-    <div id="case-family-image"></div>
+    <div id="case-family-image" class="animation-ini"></div>
   </div>
 
   <div id="detail-box">
     <div class="section-title" id="detail-title">保障說明</div>
-    <p id="detail-female-charge">(以下為女性費率)</p>
-    <div>
+    <p>(以下為女性費率)</p>
+    <div id="detail-3phase-box">
       <div class="detail-phase-box" id="detail-freshman-box">
         <div class="detail-image-box">
-          <div id="freshman-image"></div>
+          <div id="freshman-image" class="animation-ini"></div>
         </div>
-        <div class="phase-bg">
+        <div class="phase-bg animation-ini" id="freshman-phase">
           <div class="phase-bg-rec"></div>
           <div class="phase-bg-tri"></div>
-          <p class="phase-title">新鮮人階段</p>
-          <p class="phase-example">Sophia 22歲成為社會新鮮人</p>
+          <p class="phase-title freshman-color" >新鮮人階段</p>
+          <p class="phase-example">Sophia 22歲成為社會新鮮人。</p>
         </div>
-
-        <div class="insurance-bg" id="freshman-insurance-bg">
+        <div class="insurance-bg animation-ini" id="freshman-insurance-bg">
           <div class="insurance-amount-box">
             <p class="insurance-amount-title">保險金額</p>
             <p class="insurance-amount">100萬</p>
           </div>
         </div>
-        <p class="annual-amount" id="freshman-annual">一年保費400元</p>
-        <div class="balloon-bg">
+        <p class="annual-amount animation-ini" id="freshman-annual">一年保費400元</p>
+        <div class="balloon-bg animation-ini" id="balloon-1">
           <div class="balloon-text">保障Plus+</div>
         </div>
-
       </div>
       <div class="detail-phase-box" id="detail-working-box">
         <div class="detail-image-box">
-          <div id="working-image"></div>
+          <div id="working-image" class="animation-ini"></div>
         </div>
-        <div class="phase-bg">
+        <div class="phase-bg animation-ini" id="working-phase">
           <div class="phase-bg-rec"></div>
           <div class="phase-bg-tri"></div>
-          <p class="phase-title">工作階段</p>
-          <p class="phase-example">Sophia 26歲轉職空服員，<span>重新投保</span></p>
+          <p class="phase-title  working-color">工作階段</p>
+          <p class="phase-example">Sophia 26歲轉職空服員，<span>重新投保</span>。</p>
         </div>
-        <div class="insurance-bg" id="working-insurance-bg">
+        <div class="insurance-bg animation-ini" id="working-insurance-bg">
           <div class="insurance-amount-box">
             <p class="insurance-amount-title">保險金額</p>
             <p class="insurance-amount">400萬</p>
           </div>
         </div>
-        <p class="annual-amount" id="working-annual">一年保費2400元</p>
-        <div class="balloon-bg">
+        <p class="annual-amount animation-ini" id="working-annual">一年保費2400元</p>
+        <div class="balloon-bg animation-ini" id="balloon-2">
           <div class="balloon-text">保障Plus+</div>
         </div>
       </div>
       <div class="detail-phase-box" id="detail-married-box">
         <div class="detail-image-box">
-          <div id="married-image"></div>
+          <div id="married-image" class="animation-ini"></div>
         </div>
-        <div class="phase-bg">
+        <div class="phase-bg animation-ini" id="married-phase">
           <div class="phase-bg-rec"></div>
           <div class="phase-bg-tri"></div>
-          <p class="phase-title">結婚生子階段</p>
-          <p class="phase-example">Sophia 30歲結婚，<span>辦理增額</span></p>
+          <p class="phase-title married-color">結婚生子階段</p>
+          <p class="phase-example">Sophia 30歲結婚，<span>辦理增額</span>。</p>
         </div>
-        <div class="insurance-bg" id="married-insurance-bg">
+        <div class="insurance-bg animation-ini" id="married-insurance-bg">
           <div class="insurance-amount-box">
             <p class="insurance-amount-title">保險金額</p>
             <p class="insurance-amount">500萬</p>
           </div>
         </div>
-        <p class="annual-amount" id="married-annual">一年保費3500元</p>
+        <p class="annual-amount animation-ini" id="married-annual">一年保費3500元</p>
       </div>
     </div>
 
   </div>
 
+  <div id="method-time-box">
+    <div id="method-box" class="event-box animation-ini">
+      <div class="section-title" id="method-title">活動辦法</div>
+      <p><span>不限金額</span>，網路投保元大人壽Good人生一年期定期壽險，就有機會獲得iPad Pro 11吋64G WIFI版、Balmuda蒸氣烤麵包機。</p>
+      <p>元大人壽老客戶<span>續保</span>同享抽獎資格。</p>
+    </div>
+    <div id="method-image" class="animation-ini"></div>
+    <div id="time-box" class="event-box animation-ini">
+      <div class="section-title" id="time-title">活動時間</div>
+      <p>2019年01月07日至2019年03月31日止。</p>
+    </div>
+  </div>
+
+  <div id="term-box">
+    <p>注意事項</p>
+    <div class="section-title mobile" id="term-title">注意事項</div>
+    <div id="term-text">1. 參加本活動並留下個人基本資料者，即表示同意元大人壽於法令允許範圍內以電子檔或紙本形式於我國境內蒐集、處理及利用其個人資料。前述個人資料元大人壽可用於廣告行銷活動資訊通知、中獎訊息通知、寄送獎品、申報稅務資料、活動統計等與本活動相關之處理或利用。參加本活動者可自由選擇是否提供完整個人資訊，惟若不願提供或提供資訊不完整者，將無法參加本活動或喪失得獎資格。<br>
+        2. 活動參加者可依個人資料保護法規定，就所提供的個人資料向元大人壽請求行使下列權利：查詢或請求閱覽、請求製給複製本、請求補充或更正、請求停止蒐集、處理或利用、請求刪除。<br>
+        3. 網路投保抽獎獎項需於活動期間，於元大人壽進行網路投保並核保完成，若因契約撤銷、解約、變更原有契約致喪失抽獎資格者，已發出之獎品將予追回。本活動每人僅有乙次獲獎機會，不得重覆獲獎。<br>
+        4. 為保障您的得獎權益，請您確認所填寫之個人資料是否正確，以便得獎時與您聯繫。若因資料填寫不實、不完整，致無法順利送出獎項，視同無條件放棄該獎項，亦不另行抽出遞補者。<br>
+        5. 元大人壽將於<span>2019.4.8</span>前，公布中獎公告於元大人壽官方網站。<br>
+        6. 元大人壽將以電子郵件及電話通知得獎者，中獎人領獎前須先填妥本公司寄發之得獎通知電子郵件中之領獎憑證，並附上身分證正反面影本及本人親筆簽名後寄回，元大人壽將於收到領獎憑證後一個月內完成獎項寄送作業。<br>
+        7. 中獎人須於<span>2019.4.19</span>前完成領獎手續。逾期領獎或不接受開立扣繳憑單者，將視為放棄中獎權益，並不予提供任何替代獎項。中獎人資料若與登錄資料不符，或未能在本公司指定期間內提出相關資料，本公司得取消其得獎資格。<br>
+        8. 本活動如有任何因電腦、網路、電話、技術或其他不可歸責於元大人壽之事由，致參加本活動者所寄出、填寫或登錄之資料有遺失、錯誤、無法辨識或毀損等情形，元大人壽不負任何法律責任。<br>
+        9. 本次網路活動之參加者，如有違反公序良俗、惡意詆毀或散布與事實不符之不當言論內容，元大人壽將對於任何可能從事詐欺或其他破壞本網路活動或網站者，採取法律行動。<br>
+        10. 依所得稅法之規定，機會中獎年度累積中獎價值超過1,000元，將併入中獎人個人之年度綜合所得稅申報；若年度累積中獎價值超過20,000元，中獎人須自行負擔10%之所得稅，並配合元大人壽辦理代扣繳相關事宜，元大人壽將於次年度寄發扣繳憑單予中獎人。若中獎人非屬中華民國境內居住之個人，則需依中獎金額負擔20%之所得稅，元大人壽將於當年度寄發扣繳憑單予中獎人。<br>
+        11. 獎品如遇缺貨或不可抗力之因素無法提供時，元大人壽保留替換等值商品之權利，中獎人不得異議。其圖像及顏色僅供參考，以該型號之實際物品為準，且產品規格、品質及售後服務等由產品製造商負責，概與本公司無涉，中獎人不得要求折換現金或替換其他獎品，亦不得將得獎資格轉讓或轉售予他人。<br>
+        12. 本活動獎品郵寄地點僅限台灣本島、澎湖、金馬地區。參加本活動之同時，即同意接受本活動之活動辦法與注意事項之規範。<br>
+        13. 元大人壽有權視實際情況調整、修改本活動內容或中止本辦法之適用，並保有本活動相關規範之最後解釋權。</div>
+    <div id="check-all-mobile" class="mobile">查看全部</div>
+  </div>
+
+  <footer id="footer">
+    <div id="circle-back">
+      <div id="circle-front">
+        <div id="footer-arrow"></div>
+      </div>
+    </div>
+    <p>元大人壽保險股份有限公司
+        <br>客服專線：0800-088-008
+        <br>服務信箱：life@yuanta.com
+    </p>
+    <p>
+      <a href="http://www.yuantalife.com.tw/Web/DownLoadFile.aspx?id=66586CB6-F06A-474B-AF12-C74B266A26E0">電子商務自律規範</a>
+      <a href="http://www.yuantalife.com.tw/Web/page.aspx?id=634519F6-DD84-4809-8061-7551DCA047AA">隱私權保護聲明</a>
+      <a href="http://www.yuantalife.com.tw/Web/page.aspx?id=FFFF8730-0A4A-40DA-B075-17F71D812FCF">客戶資料保密措施</a>
+    </p>
+  </footer>
 
 
 </body>
 
+<script src="index.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 </html>
