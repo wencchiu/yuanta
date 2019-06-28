@@ -249,8 +249,8 @@ header {
 }
 
 @keyframes coverFlag {
-  from {background: none;}
-  to   {background: url(images/1-flag.png);}
+  from {opacity: 0;}
+  to   {opacity: 1;}
 }
 
 #cover-text-gift {
@@ -355,6 +355,10 @@ header {
 
 .animation-on {
   display: block;
+}
+
+.animation-on-inline-block {
+  display: inline-block;
 }
 
 .animation-case-title {
@@ -732,6 +736,23 @@ header {
   left: 160px;
 }
 
+#method-image-wave {
+  background: url(images/sound-wave-1.png) no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  background-size: contain;
+  right: 0;
+  animation: wave infinite 2s;
+}
+
+@keyframes wave {
+  0%   {background-image: url(images/sound-wave-1.png);}
+  30%  {background-image: url(images/sound-wave-2.png);}
+  60%  {background-image: url(images/sound-wave-3.png);}
+  100% {background-image: url(images/sound-wave-3.png);}
+}
+
 #method-title, #time-title {
   margin-left: 0;
 }
@@ -900,7 +921,7 @@ footer p a:last-child {
     right: 0;
     bottom: 0;
     height: 270px;
-    width: 45px;
+    width: 40px;
     z-index: 9999;
     -webkit-transition: width .5s, height .5s, right .5s, bottom .5s, opacity .5s, -webkit-transform .7s;
     transition: width .5s, height .5s, right .5s, bottom .5s, opacity .5s, -webkit-transform .7s;
@@ -1090,7 +1111,7 @@ footer p a:last-child {
   }
 
   @keyframes caseContentBg {
-    0%  {top: -100px;}
+    0%  {top: -167px;}
     100% {top: -17px;}
   }
 
@@ -1352,7 +1373,11 @@ footer p a:last-child {
     height: 284px;
     position: relative;
     left: 22px;
-    display: inline-block;
+  }
+
+  #method-image-wave {
+    width: 40px;
+    height: 50px;
   }
 
   #detail-married-box {
@@ -1375,7 +1400,6 @@ footer p a:last-child {
   }
 
   .event-box:last-child {
-    display: inline-block;
     width: 152px;
     position: relative;
     top: -25px;

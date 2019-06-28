@@ -1,4 +1,5 @@
 
+// Cover Animation //
 var strArr = ["壽", "險", "保", "障", "P", "l", "u", "s", "+"];
 var i = 0;
 var divTyping = document.getElementById("cover-text-title");
@@ -16,8 +17,7 @@ function typing() {
 }
 setTimeout(typing, 300);
 
-
- // Animation detection //
+ // Section detection //
 
 var caseBox = document.getElementById("case-box");
 var detailBox = document.getElementById("detail-box");
@@ -48,7 +48,11 @@ function scrolling() {
     if (!firstScrollDetail) {
       firstScrollDetail = true;
       console.log("firstScroll in the detail box");
-      detailFreshmanImage.classList.add("animation-detail","animation-on");
+      if (window.innerWidth < 1024) {
+        detailAnimationMobile();
+      } else {
+        detailAnimation();
+      }
     }
   };
   if (isScrolledIntoView(methodTimeBox)) {
@@ -56,31 +60,33 @@ function scrolling() {
       firstScrollMethodTime = true;
       console.log("firstScroll in the method-time box");
       methodBox.classList.add("animation-method-time-text","animation-on");
-      methodImage.classList.add("animation-method-time-image","animation-on");
-      timeBox.classList.add("animation-method-time-text","animation-on");
+      methodImage.classList.add("animation-method-time-image","animation-on-inline-block");
+      timeBox.classList.add("animation-method-time-text","animation-on-inline-block");
     }
   };
-  if (isScrollToFooter(footer)) {
-    if (!inFooter) {
-      inFooter = true;
-      calculateMobileBtn.style.display = "none";
-      iconBoxMobile.classList.add("hide");
-      circleFront.classList.add("show");
+  if (window.innerWidth < 1024) {
+    if (isScrollToFooter(footer)) {
+      if (!inFooter) {
+        inFooter = true;
+        calculateMobileBtn.style.display = "none";
+        iconBoxMobile.classList.add("hide");
+        circleFront.classList.add("show");
+      }
+    };
+    if (isScrollOffFooter(footer)) {
+      if (inFooter) {
+        inFooter = false;
+        calculateMobileBtn.style.display = "unset";
+        iconBoxMobile.classList.remove("hide");
+        circleFront.classList.remove("show");
+      }
     }
-  };
-  if (isScrollOffFooter(footer)) {
-    if (inFooter) {
-      inFooter = false;
-      calculateMobileBtn.style.display = "unset";
-      iconBoxMobile.classList.remove("hide");
-      circleFront.classList.remove("show");
-    }
-  }
+  }  
 }
 
 function isScrolledIntoView(el) {
   var rect = el.getBoundingClientRect();
-  var isVisible = rect.top <= 100;
+  var isVisible = rect.top <= 200;
   return isVisible;
 };
 
@@ -95,7 +101,6 @@ function isScrollOffFooter(el) {
   var isVisible = rect.top >= 650;
   return isVisible;
 };
-
 
 // case animation //
 
@@ -142,16 +147,28 @@ var detailMarriedInsuranceBg = document.getElementById("married-insurance-bg");
 var detailMarriedAnnual = document.getElementById("married-annual");
 var detailBalloon2 = document.getElementById("balloon-2");
 
-detailFreshmanImage.addEventListener("animationend", detailAnimation2);
-detailFreshmanPhase.addEventListener("animationend", detailAnimation3);
+function detailAnimation() {
+  detailFreshmanImage.classList.add("animation-detail","animation-on");
+  detailFreshmanImage.addEventListener("animationend", detailAnimation2);
+  detailFreshmanPhase.addEventListener("animationend", detailAnimation3);
+  detailFreshmanInsuranceBg.addEventListener("animationend", detailAnimation4);
+  detailWorkingImage.addEventListener("animationend", detailAnimation5);
+  detailWorkingPhase.addEventListener("animationend", detailAnimation6);
+  detailWorkingInsuranceBg.addEventListener("animationend", detailAnimation7);
+  detailMarriedImage.addEventListener("animationend", detailAnimation8);
+  detailMarriedPhase.addEventListener("animationend", detailAnimation9);
+}
 
-detailFreshmanInsuranceBg.addEventListener("animationend", detailAnimation4);
-detailWorkingImage.addEventListener("animationend", detailAnimation5);
-detailWorkingPhase.addEventListener("animationend", detailAnimation6);
-
-detailWorkingInsuranceBg.addEventListener("animationend", detailAnimation7);
-detailMarriedImage.addEventListener("animationend", detailAnimation8);
-detailMarriedPhase.addEventListener("animationend", detailAnimation9);
+function detailAnimationMobile() {
+  detailFreshmanImage.classList.add("animation-detail","animation-on");
+  detailFreshmanPhase.classList.add("animation-detail","animation-on");
+  detailFreshmanInsuranceBg.classList.add("animation-detail","animation-on");
+  detailFreshmanAnnual.classList.add("animation-detail","animation-on");
+  detailFreshmanAnnual.addEventListener("animationend",detailAnimation2M);
+  detailBalloon1.addEventListener("animationend",detailAnimation3M);
+  detailWorkingAnnual.addEventListener("animationend",detailAnimation4M);
+  detailBalloon2.addEventListener("animationend",detailAnimation5M);
+}
 
 function detailAnimation2() {
   detailFreshmanPhase.classList.add("animation-detail","animation-on");
@@ -181,6 +198,24 @@ function detailAnimation9() {
   detailMarriedInsuranceBg.classList.add("animation-detail","animation-on");
   detailMarriedAnnual.classList.add("animation-detail","animation-on");
   detailBalloon2.classList.add("animation-detail","animation-on");
+}
+function detailAnimation2M() {
+  detailBalloon1.classList.add("animation-detail","animation-on");
+}
+function detailAnimation3M() {
+  detailWorkingImage.classList.add("animation-detail","animation-on");
+  detailWorkingPhase.classList.add("animation-detail","animation-on");
+  detailWorkingInsuranceBg.classList.add("animation-detail","animation-on");
+  detailWorkingAnnual.classList.add("animation-detail","animation-on");
+}
+function detailAnimation4M() {
+  detailBalloon2.classList.add("animation-detail","animation-on");
+}
+function detailAnimation5M() {
+  detailMarriedImage.classList.add("animation-detail","animation-on");
+  detailMarriedPhase.classList.add("animation-detail","animation-on");
+  detailMarriedInsuranceBg.classList.add("animation-detail","animation-on");
+  detailMarriedAnnual.classList.add("animation-detail","animation-on");
 }
 
 // term animation //
